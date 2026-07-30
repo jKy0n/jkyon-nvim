@@ -1,0 +1,34 @@
+{
+  "plugins": {
+    "catppuccin": {
+      "rev": "605b4603797de970e9f3a4238c199c850da03186",
+      "src": "https://github.com/catppuccin/nvim",
+      "version": "'stable'"
+    },
+    "codewindow": {
+      "rev": "a8e175043ce3baaa89e0a6b5171bcd920aab3dad",
+      "src": "https://github.com/gorbit99/codewindow.nvim"
+    },
+    "cord": {
+      "rev": "8f081613c1314a0d6f38839c2788216621efb4d9",
+      "src": "https://github.com/vyfor/cord.nvim"
+    },
+    "gentoo-syntax": {
+      "rev": "1b3a81ec62e5c843245dc431be0fe072add7eca8",
+      "src": "https://github.com/gentoo/gentoo-syntax"
+    },
+    "mini.map": {
+      "rev": "7e836e3679387012f84f2a389ace740d57a93a37",
+      "src": "https://github.com/nvim-mini/mini.map",
+      "version": "'stable'"
+    },
+    "minuet": {
+      "rev": "0b2659c265838a98e92cc85d7cd6367a36c50fff",
+      "src": "https://github.com/milanglacier/minuet-ai.nvim"
+    },
+    "pkgbuild-syntax": {
+      "rev": "ca8e436e42ac0e303f4ce67e673cb3fe23eacf1b",
+      "src": "https://github.com/Firef0x/PKGBUILD.vim"
+    }
+  }
+}
