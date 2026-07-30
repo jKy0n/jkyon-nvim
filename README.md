@@ -4,7 +4,7 @@ Configuração de Neovim construída do zero, sem framework de plugin manager �
 
 > Sucessora da minha config baseada em [AstroNvim](https://github.com/jKy0n/AstroNvim.config). Trocada por algo mais enxuto e 100% sob meu controle.
 
-<!-- ![face](link-do-seu-screenshot-aqui) -->
+<!-- ![face](https://github.com/jKy0n/jkyon-nvim/blob/master/media/jkyon-nvim-2026-07-30_14%3A08.png) -->
 
 ## Filosofia
 
@@ -33,9 +33,9 @@ mv ~/.cache/nvim ~/.cache/nvim.bak
 #### 2. Clonar o repositório
 
 ```shell
-git clone https://github.com/SEU_USUARIO/jkyon-nvim.git ~/.config/nvim # HTTPS
+git clone https://github.com/jKy0n/jkyon-nvim.git ~/.config/nvim # HTTPS
 # ou
-git clone git@github.com:SEU_USUARIO/jkyon-nvim.git ~/.config/nvim     # SSH (recomendado)
+git clone git@github.com:jKy0n/jkyon-nvim.git ~/.config/nvim     # SSH (recomendado)
 ```
 
 #### 3. Abrir o Neovim
