@@ -4,7 +4,7 @@ Configuração de Neovim construída do zero, sem framework de plugin manager �
 
 > Sucessora da minha config baseada em [AstroNvim](https://github.com/jKy0n/AstroNvim.config). Trocada por algo mais enxuto e 100% sob meu controle.
 
-<!-- ![face](https://github.com/jKy0n/jkyon-nvim/blob/master/media/jkyon-nvim-2026-07-30_14%3A08.png) -->
+![face](https://github.com/jKy0n/jkyon-nvim/blob/master/media/jkyon-nvim-2026-07-30_14%3A08.png)
 
 ## Filosofia
 
