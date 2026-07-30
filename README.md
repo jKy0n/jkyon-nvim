@@ -4,7 +4,7 @@ Configuração de Neovim construída do zero, sem framework de plugin manager �
 
 > Sucessora da minha config baseada em [AstroNvim](https://github.com/jKy0n/AstroNvim.config). Trocada por algo mais enxuto e 100% sob meu controle.
 
-![face](https://github.com/jKy0n/jkyon-nvim/blob/master/media/jkyon-nvim-2026-07-30_14%3A08.png)
+![face](https://github.com/jKy0n/jkyon-nvim/blob/master/media/jkyon-nvim-2026-07-30_15%3A52.png)
 
 ## Filosofia
 
@@ -15,9 +15,10 @@ Configuração de Neovim construída do zero, sem framework de plugin manager �
 ## Requisitos
 
 - Neovim **0.12+** (obrigatório — é onde o `vim.pack` existe)
-- `git`
+- `git` **2.38+** (necessário pro `mini.diff`)
 - `curl` (usado pelo cord.nvim pra baixar o binário do servidor, e pelo minuet-ai.nvim pra falar com o Ollama)
 - [Ollama](https://ollama.com) rodando em algum host da rede Tailscale com o modelo `qwen2.5-coder:3b` — necessário só pro autocomplete (minuet-ai.nvim)
+- Uma **Nerd Font** configurada no terminal — necessário pros ícones da statusline/minimap
 
 ## 🛠️ Instalação
 
@@ -46,7 +47,7 @@ Na primeira execução, `vim.pack.add()` clona todos os plugins automaticamente:
 nvim
 ```
 
-> Quer testar em paralelo sem sobrescrever uma config existente? Use `NVIM_APPNAME=jkyon-nvim nvim` — o Neovim isola config, dados, estado e cache num perfil separado (`:h $NVIM_APPNAME`).
+> Quer testar em paralelo sem sobrescrever uma config existente? Use `NVIM_APPNAME=jkyon-nvim nvim` — o Neovim isola config, dados, estado e cache num perfil separado (`:h $NVIM_APPNAME`). Foi assim que essa config foi testada antes de virar a oficial.
 
 ## Gerenciar plugins
 
@@ -66,12 +67,20 @@ Pra adicionar um plugin novo: cria `lua/config/plugins/<nome>.lua` retornando `{
 |---|---|
 | [catppuccin/nvim](https://github.com/catppuccin/nvim) | Colorscheme (frappe, fundo transparente) |
 | [nvim-mini/mini.map](https://github.com/nvim-mini/mini.map) | Minimap lateral, estilo VSCode |
+| [nvim-mini/mini.statusline](https://github.com/nvim-mini/mini.statusline) | Barra de status |
+| [nvim-mini/mini.icons](https://github.com/nvim-mini/mini.icons) | Provedor de ícones (filetype, statusline) |
+| [nvim-mini/mini-git](https://github.com/nvim-mini/mini-git) | Dados de git (branch, HEAD) pra statusline |
+| [nvim-mini/mini.diff](https://github.com/nvim-mini/mini.diff) | Diff em tempo real na gutter + estatísticas (+/~/-) na statusline |
 | [vyfor/cord.nvim](https://github.com/vyfor/cord.nvim) | Discord Rich Presence |
 | [milanglacier/minuet-ai.nvim](https://github.com/milanglacier/minuet-ai.nvim) | Autocomplete via Ollama local (FIM) |
 | [gentoo/gentoo-syntax](https://github.com/gentoo/gentoo-syntax) | Syntax highlighting pra ebuild/eclass |
 | [Firef0x/PKGBUILD.vim](https://github.com/Firef0x/PKGBUILD.vim) | Syntax highlighting pra PKGBUILD |
 
-Comentário de linha/seleção (`gcc`/`gc`) é nativo do Neovim 0.10+, mapeado em `Ctrl + /`.
+## Detalhes de UI
+
+- Fundo transparente (buffer + floats) — herda a cor/imagem do terminal.
+- `cmdheight = 0` — sem linha de comando ociosa ocupando espaço, tela maximizada pro código.
+- Comentário de linha/seleção nativo do Neovim (`gcc`/`gc`), mapeado em `Ctrl + /`.
 
 ## Máquinas
 
