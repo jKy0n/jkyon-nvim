@@ -17,9 +17,29 @@
       "rev": "1b3a81ec62e5c843245dc431be0fe072add7eca8",
       "src": "https://github.com/gentoo/gentoo-syntax"
     },
+    "mini.diff": {
+      "rev": "0743d26bd858ebe32efcf5c86a91a422a000f273",
+      "src": "https://github.com/nvim-mini/mini.diff",
+      "version": "'stable'"
+    },
+    "mini.git": {
+      "rev": "96db7676696e53add56726e9e80f92dff9f63d17",
+      "src": "https://github.com/nvim-mini/mini-git",
+      "version": "'stable'"
+    },
+    "mini.icons": {
+      "rev": "e56797f90192d81f1fda02e662fc3e8e3d775027",
+      "src": "https://github.com/nvim-mini/mini.icons",
+      "version": "'stable'"
+    },
     "mini.map": {
       "rev": "7e836e3679387012f84f2a389ace740d57a93a37",
       "src": "https://github.com/nvim-mini/mini.map",
+      "version": "'stable'"
+    },
+    "mini.statusline": {
+      "rev": "b5547f44560dae3ccd81f914256fa6f705837022",
+      "src": "https://github.com/nvim-mini/mini.statusline",
       "version": "'stable'"
     },
     "minuet": {

@@ -8,3 +8,11 @@ vim.keymap.set("n", "<C-_>", "gcc", { remap = true, desc = "Comentar linha" })
 vim.keymap.set("v", "<C-_>", "gc", { remap = true, desc = "Comentar seleção" })
 vim.keymap.set("n", "<C-/>", "gcc", { remap = true, desc = "Comentar linha" })
 vim.keymap.set("v", "<C-/>", "gc", { remap = true, desc = "Comentar seleção" })
+
+-- Refazer com Alt + u
+vim.keymap.set('n', '<A-u>', '<C-r>', opts)
+
+-- Apagar linha no Insert Mode (Shift+Del)                                                           
+-- vim.keymap.set("i", "<S-Del>", function()                                                            
+--   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>\"_ddi", true, false, true), "n", true) 
+-- end, { noremap = true, silent = true, desc = "Delete entire line (Shift+Del insert mode)" })         
